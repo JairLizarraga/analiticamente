@@ -1,0 +1,36 @@
+.flex-section {
+  background-color: #F2E9E4; /* Fondo beige claro */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 1rem;  /* 1rem padding left and right */
+  box-sizing: border-box; /* ensures padding doesn't cause overflow */
+}
+
+
+
+
+.service-card {
+  flex: 1 1 300px;
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.service-card:hover {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .flex-section {
+    flex-direction: column;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+}

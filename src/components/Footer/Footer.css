@@ -1,0 +1,88 @@
+.footer {
+  color: #6B5E5A; /* Gris cálido */
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 0.5rem;
+  color: #3E2C29; /* Marrón oscuro para encabezados */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #6B5E5A; /* Gris cálido */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+  color: #C14D3D; /* Rojo terracota para hover */
+}
+
+.social-icons a {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  color: #6B5E5A; /* Gris cálido */
+  transition: color 0.3s ease;
+}
+
+/* Colores personalizados por red al hacer hover */
+.social-icons a.whatsapp:hover {
+  color: #25D366; /* Verde WhatsApp */
+}
+
+.social-icons a.facebook:hover {
+  color: #1877F2; /* Azul Facebook */
+}
+
+.social-icons a.instagram:hover {
+  color: #E1306C; /* Rosa Instagram */
+}
+
+.social-icons a.linkedin:hover {
+  color: #0A66C2; /* Azul LinkedIn */
+}
+
+.social-icons a.doctoralia:hover {
+  color: #00c7b1; /* Color aproximado Doctoralia */
+}
+
+.map-link {
+  color: inherit;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.map-link:hover {
+  color: #00aaff; /* Color institucional para hover */
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(107, 94, 90, 0.3); /* Gris cálido translúcido */
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #6B5E5A;
+}

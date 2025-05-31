@@ -1,0 +1,47 @@
+
+/* Agrega esta regla al inicio o al final de Home.css */
+html {
+  scroll-behavior: smooth;
+}
+
+.home-section {
+  background-color: #F2E9E4; /* Fondo beige claro */
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home-content h2 {
+  font-size: 2rem;
+  color: #3E2C29; /* Marrón oscuro - Título */
+  margin-bottom: 1rem;
+}
+
+.home-content p {
+  font-size: 1.125rem;
+  color: #6B5E5A; /* Gris cálido - Texto secundario */
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.home-cta-button {
+  display: inline-block;
+  background-color: #C14D3D; /* Rojo terracota - Color principal del botón */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.home-cta-button:hover {
+  background-color: #A53F31; /* Versión más oscura para hover */
+}
