@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
 import './Contact.css';
 
 const Contact: React.FC = () => {
