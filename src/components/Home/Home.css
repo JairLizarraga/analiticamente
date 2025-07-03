@@ -1,47 +1,69 @@
-
-/* Agrega esta regla al inicio o al final de Home.css */
 html {
   scroll-behavior: smooth;
 }
 
 .home-section {
-  background-color: #F2E9E4; /* Fondo beige claro */
-  padding: 4rem 2rem;
-  text-align: center;
+  background-color: #F2E9E4;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .home-content {
   max-width: 800px;
   margin: 0 auto;
+  padding-top: 60px;
 }
 
 .home-content h2 {
   font-size: 2rem;
-  color: #3E2C29; /* Marrón oscuro - Título */
+  color: #3E2C29;
   margin-bottom: 1rem;
 }
 
 .home-content p {
   font-size: 1.125rem;
-  color: #6B5E5A; /* Gris cálido - Texto secundario */
+  color: #6B5E5A;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
 
-.home-cta-button {
-  display: inline-block;
-  background-color: #C14D3D; /* Rojo terracota - Color principal del botón */
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+/* New button container */
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.home-cta-button:hover {
-  background-color: #A53F31; /* Versión más oscura para hover */
+/* Button style */
+.nav-button {
+  font-family: 'Dancing Script', cursive;
+  color: #3E2C29;
+  border: 2px solid white;
+  background-color: #F2E9E4;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover style */
+.nav-button:hover {
+  background-color: #3E2C29;
+  color: white;
+  border-color: #3E2C29;
+}
+
+/* Responsive: stack buttons vertically on mobile */
+@media (max-width: 768px) {
+  .home-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 }

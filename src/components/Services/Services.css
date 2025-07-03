@@ -1,36 +1,120 @@
-.flex-section {
-  background-color: #F2E9E4; /* Fondo beige claro */
+.services-section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 0 1rem;  /* 1rem padding left and right */
-  box-sizing: border-box; /* ensures padding doesn't cause overflow */
-}
-
-
-
-
-.service-card {
-  flex: 1 1 300px;
-  background-color: var(--color-secondary);
-  color: var(--color-text);
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  gap: 1rem;
+  align-items: center;
   padding: 1rem;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+.services-text-column {
+  flex: 0 0 70%;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-text-column .services-description {
+  max-width: 600px;
+  font-size: 1.2rem;
+  color: #3E2C29;
+  line-height: 1.6;
+}
+
+/* Apply Dancing Script only to h2 */
+.services-description h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Image column */
+.services-image-column {
+  flex: 0 0 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  padding: 1rem;
+  box-sizing: border-box;
+  min-width: 250px;
 }
 
-.service-card:hover {
-  background-color: var(--color-accent);
-  color: white;
+.image-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  .flex-section {
+.service-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 500px;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+}
+
+.service-image.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .services-section {
     flex-direction: column;
+    height: auto;
   }
 
-  .service-card {
+  .services-text-column,
+  .services-image-column {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 1rem 2rem;
+    height: auto;
+  }
+
+  .services-image-column {
+    height: auto;
+    min-height: 320px;
+    margin-top: 1rem;
+  }
+
+  .image-background {
+    height: 100%;
+    min-height: 320px;
+    position: relative;
+  }
+
+  .service-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 100%;
+    height: auto;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+  }
+
+  .service-image.active {
+    opacity: 1;
+    pointer-events: auto;
   }
 }

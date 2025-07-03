@@ -1,0 +1,26 @@
+.instagram-section {
+  background-color: #fdfaf6;
+  padding: 3rem 1rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.instagram-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.instagram-widget-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+              0 2px 6px rgba(0, 0, 0, 0.06);
+}

@@ -5,12 +5,19 @@ const Home: React.FC = () => {
   return (
     <section id="home" className="home-section">
       <div className="home-content">
-        <h2>Tu bienestar emocional empieza aquí</h2>
+        <h2>Si estás aquí, ya diste el primer paso</h2>
         <p>
-          En <strong>Analítica-mente</strong> te acompañamos en tu proceso de autoconocimiento y sanación. 
-          Brindamos atención psicológica ética, empática y personalizada para ayudarte a vivir con mayor equilibrio.
+          Estás en un lugar donde <strong>tu historia importa</strong>.<br />
+          Donde puedes pausar, pensar, hablar y resignificar.<br />
+          El proceso es tuyo, pero no lo tienes que recorrer solo.
         </p>
-        <a href="#contact" className="home-cta-button">Agenda tu consulta</a>
+
+        <div className="home-buttons">
+          <a href="#services" className="nav-button">Servicios</a>
+          <a href="#about" className="nav-button">Sobre Nosotros</a>
+          <a href="#social" className="nav-button">Síguenos</a>
+          <a href="#contact" className="nav-button">Contacto</a>
+        </div>
       </div>
     </section>
   );

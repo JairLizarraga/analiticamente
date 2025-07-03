@@ -1,5 +1,5 @@
 .footer {
-  color: #6B5E5A; /* Gris cálido */
+  color: #000000; /* Gris cálido */
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -18,7 +18,7 @@
 
 .footer-section h4 {
   margin-bottom: 0.5rem;
-  color: #3E2C29; /* Marrón oscuro para encabezados */
+  color: #000000; /* Marrón oscuro para encabezados */
 }
 
 .footer-section ul {
@@ -31,7 +31,7 @@
 }
 
 .footer-section ul li a {
-  color: #6B5E5A; /* Gris cálido */
+  color: #000000; /* Gris cálido */
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
@@ -45,7 +45,7 @@
 .social-icons a {
   margin: 0 0.5rem;
   font-size: 1.5rem;
-  color: #6B5E5A; /* Gris cálido */
+  color: #000000; /* Gris cálido */
   transition: color 0.3s ease;
 }
 
@@ -82,7 +82,27 @@
 
 .footer-bottom {
   border-top: 1px solid rgba(107, 94, 90, 0.3); /* Gris cálido translúcido */
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   font-size: 0.9rem;
-  color: #6B5E5A;
+  color: #000000;
+}
+
+.location-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Solo en pantallas grandes (desktop), cambia a diseño horizontal */
+@media screen and (min-width: 1024px) {
+  .location-list {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .location-list p {
+    margin: 0 1rem;
+    white-space: nowrap;
+  }
 }
