@@ -13,13 +13,13 @@ const App: React.FC = () => {
   return (
     <>
       <Header />
+      <WatsonAssistant />
       <main className="container">
         <Home />
         <Services />
         <About />
         <InstagramWidget />
         <Contact />
-        <WatsonAssistant />
       </main>
       <Footer />
     </>

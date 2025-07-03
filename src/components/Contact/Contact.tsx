@@ -1,19 +1,7 @@
-import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import './Contact.css';
 
 const Contact: React.FC = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert(`Gracias, ${name}. Te contactaremos pronto.`);
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
 
   return (
     <section id="contact" className="contact-section">
