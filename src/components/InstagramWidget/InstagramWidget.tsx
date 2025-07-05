@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./InstagramWidget.css"; // Agrega esta línea para aplicar estilos
+import "./InstagramWidget.css"; // Asegúrate de que este archivo esté estilizado correctamente
 
 const InstagramWidget: React.FC = () => {
   useEffect(() => {
@@ -18,11 +18,11 @@ const InstagramWidget: React.FC = () => {
       <h2 className="instagram-title">Síguenos en Instagram</h2>
       <div className="instagram-widget-wrapper">
         <iframe
-          src="//lightwidget.com/widgets/b5ae71e2e65f585e8699dd3328e7ac4a.html"
+          src="https://cdn.lightwidget.com/widgets/b5ae71e2e65f585e8699dd3328e7ac4a.html"
           scrolling="no"
           allowTransparency={true}
           className="lightwidget-widget"
-          style={{ width: "70%", border: 0, overflow: "hidden" }}
+          style={{ width: "100%", border: 0, overflow: "hidden" }}
           title="Instagram Feed"
         ></iframe>
       </div>
