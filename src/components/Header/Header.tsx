@@ -40,8 +40,6 @@ const Header: React.FC = () => {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
 
-    // Open Watson Assistant chat
-    window.watsonAssistantInstance?.openWindow();
   };
 
   return (

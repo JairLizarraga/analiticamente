@@ -1,108 +1,17 @@
-.footer {
-  color: #000000; /* Gris cálido */
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 2rem;
-  margin-bottom: 1rem;
-}
-
-.footer-section {
-  flex: 1 1 200px;
-}
-
-.footer-section h4 {
-  margin-bottom: 0.5rem;
-  color: #000000; /* Marrón oscuro para encabezados */
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 0.5rem;
-}
-
-.footer-section ul li a {
-  color: #000000; /* Gris cálido */
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
-  text-decoration: underline;
-  color: #C14D3D; /* Rojo terracota para hover */
-}
-
-.social-icons a {
-  margin: 0 0.5rem;
-  font-size: 1.5rem;
-  color: #000000; /* Gris cálido */
-  transition: color 0.3s ease;
-}
-
-/* Colores personalizados por red al hacer hover */
-.social-icons a.whatsapp:hover {
-  color: #25D366; /* Verde WhatsApp */
-}
-
-.social-icons a.facebook:hover {
-  color: #1877F2; /* Azul Facebook */
-}
-
-.social-icons a.instagram:hover {
-  color: #E1306C; /* Rosa Instagram */
-}
-
-.social-icons a.linkedin:hover {
-  color: #0A66C2; /* Azul LinkedIn */
-}
-
-.social-icons a.doctoralia:hover {
-  color: #00c7b1; /* Color aproximado Doctoralia */
-}
-
-.map-link {
-  color: inherit;
-  text-decoration: underline;
-  transition: color 0.3s ease;
-}
-
-.map-link:hover {
-  color: #00aaff; /* Color institucional para hover */
-}
-
 .footer-bottom {
-  border-top: 1px solid rgba(107, 94, 90, 0.3); /* Gris cálido translúcido */
-  padding-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #000000;
+  border-top: 1px solid rgba(0, 0, 0, 0.15); /* línea sutil arriba */
+  padding: 1rem 0;                            /* espacio arriba y abajo */
+  font-size: 0.85rem;                         /* texto un poco pequeño */
+  color: #555555;                             /* gris medio para no ser muy intenso */
+  text-align: center;                         /* centrado */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* tipografía legible */
+  background-color: #f9f9f9;                  /* fondo muy claro para separación */
+  user-select: none;                          /* para evitar selección accidental */
 }
 
-.location-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-/* Solo en pantallas grandes (desktop), cambia a diseño horizontal */
-@media screen and (min-width: 1024px) {
-  .location-list {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .location-list p {
-    margin: 0 1rem;
-    white-space: nowrap;
+@media (max-width: 600px) {
+  .footer-bottom {
+    font-size: 0.8rem;                        /* ajustar tamaño en móviles */
+    padding: 0.75rem 0;
   }
 }

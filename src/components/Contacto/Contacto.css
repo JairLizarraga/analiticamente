@@ -1,0 +1,123 @@
+.contacto {
+  background-color: #fafafa;
+  padding: 3rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  text-align: center;
+}
+
+.contacto-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contacto-seccion {
+  flex: 1 1 250px;
+  background: #fff;
+  padding: 1.5rem 1.2rem;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.contacto-seccion:hover {
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.15);
+}
+
+.contacto-seccion h3 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.contacto-seccion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacto-seccion ul li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Botón WhatsApp */
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: #25d366;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem; /* Cambiado de 1.1rem a 1rem */
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgb(37 211 102 / 0.4);
+  transition: background-color 0.3s ease;
+}
+
+
+.btn-whatsapp:hover {
+  background-color: #1ebe56;
+  box-shadow: 0 6px 12px rgb(37 211 102 / 0.6);
+}
+
+.icon-whatsapp {
+  font-size: 1.4rem;
+}
+
+/* Redes sociales */
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.icon-link {
+  color: #555;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.icon-link.whatsapp:hover {
+  color: #25d366;
+}
+
+.icon-link.instagram:hover {
+  color: #e4405f;
+}
+
+/* Botón abrir asistente virtual */
+.btn-chat {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem; /* Cambiado de 1rem (igual que antes) pero aseguramos que sea igual */
+  font-weight: 600;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-chat:hover {
+  background-color: #222;
+}
+
+
+/* Responsive */
+@media (max-width: 720px) {
+  .contacto-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
