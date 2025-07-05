@@ -26,7 +26,7 @@ const Home: React.FC = () => {
         <div className="home-buttons">
           <a href="#services" className="nav-button">Servicios</a>
           <a href="#about" className="nav-button">Sobre Nosotros</a>
-          <a href="#social" className="nav-button">Síguenos</a>
+          <a href="#social" className="nav-button">Redes sociales</a>
 
           {/* Aquí agregamos el onClick para abrir el chat */}
           <a href="#footer" className="nav-button" onClick={handleOpenChat}>Contacto</a>
