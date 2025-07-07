@@ -7,11 +7,13 @@ import InstagramWidget from "./components/InstagramWidget/InstagramWidget";
 import Contacto from "./components/Contacto/Contacto";
 import './App.css'; // Make sure to import App.css if not already
 import Footer from "./components/Footer/Footer";
+import ScrollButtons from "./components/ScrollButtons/ScrollButtons";
 
 const App: React.FC = () => {
   return (
     <>
       <Header />
+      <ScrollButtons />
       <main className="container">
         <Home />
         <Services />

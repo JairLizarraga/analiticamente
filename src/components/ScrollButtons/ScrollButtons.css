@@ -1,0 +1,34 @@
+.scroll-btn {
+  position: fixed;
+  right: 20px;          /* Separado 20px del borde derecho */
+  top: 50%;             /* Centrado verticalmente */
+  transform: translateY(-50%); /* Para que el botón quede perfectamente centrado */
+  z-index: 1000;
+  background-color: #fcd79f;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-btn:hover {
+  opacity: 1;
+}
+
+/* Si quieres que estén uno arriba del otro, usa un margen para separarlos */
+.scroll-btn-up {
+  margin-bottom: 10px;  /* Separación con el botón de abajo */
+  /* Aquí quitas el top para que no se sobreponga con transform */
+  top: calc(50% - 25px); /* Desplaza un poco hacia arriba */
+  transform: none;
+}
+
+.scroll-btn-down {
+  top: calc(50% + 25px); /* Desplaza un poco hacia abajo */
+  transform: none;
+}
