@@ -1,0 +1,4 @@
+/* Ajusta para que el scroll no quede oculto tras el header fijo */
+.container > section {
+  scroll-margin-top: 100px; /* ajusta al alto exacto de tu header */
+}
