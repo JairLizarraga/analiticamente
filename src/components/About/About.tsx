@@ -4,9 +4,9 @@ import teamPhoto from "../../assets/About/profilepic.jpg";
 
 const paragraphs = [
   <>
-    Soy psicóloga clínica, maestrante en Terapia Cognitivo Conductual. Me he formado en arteterapia y he trabajado junto a terapeutas con enfoques Gestáltico, Dialéctico Conductual (DBT) e integrativo a lo largo de 8 años. Esta combinación me ha permitido acompañar desde distintas miradas, con sensibilidad y profesionalismo.
+    Soy psicóloga clínica, cursando la maestría en Terapia Cognitivo Conductual. Me he formado en arteterapia y he trabajado junto a terapeutas con enfoques Gestáltico, Dialéctico Conductual (DBT) e integrativo a lo largo de 8 años. Esta combinación me ha permitido acompañar desde distintas miradas, con sensibilidad y profesionalismo.
     <br /><br />
-    Te acompaño con respeto, empatía y compromiso, para que puedas entender mejor lo que sentís, romper esos ciclos que generan malestar y encontrar caminos que realmente funcionen para vos y te ayuden a estar más en paz contigo y con tu entorno.
+    Te acompaño con respeto, empatía y compromiso, para que puedas entender mejor lo que sientes, romper esos ciclos que generan malestar y encontrar caminos que realmente funcionen para ti y te ayuden a estar más en paz contigo y con tu entorno.
   </>,
   <>
     Una de las herramientas que utilizo es la Terapia Cognitivo Conductual (TCC). Para explicarla de forma sencilla, imagina que tus pensamientos son pequeñas frases que pasan por tu cabeza sin que las invites. Algunas son rápidas, como “No puedo” o “Esto va a salir mal” — esos son los pensamientos automáticos.
