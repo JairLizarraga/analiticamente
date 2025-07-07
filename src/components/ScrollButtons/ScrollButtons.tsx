@@ -17,7 +17,7 @@ const ScrollButtons: React.FC = () => {
       const scrollPosition = window.scrollY + window.innerHeight / 2; // Punto medio viewport
 
       // Encontrar la sección donde el scroll está centrado
-      const index = sectionIds.findIndex((id, i) => {
+      const index = sectionIds.findIndex((id) => {
         const el = document.getElementById(id);
         if (!el) return false;
 
