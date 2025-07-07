@@ -23,17 +23,27 @@ const Services: React.FC = () => {
       <div className="services-text-column">
         <div className="services-description">
           <h2>¿Cómo te puedo acompañar?</h2>
+
           <p>
-            Trabajo con niños que están aprendiendo a poner en palabras lo que sienten, con adolescentes que atraviesan enredos emocionales, miedos o crisis de identidad, y con personas adultas que buscan un espacio para dejar de exigirse tanto y empezar a entender(se) desde otro lugar.
+            En este espacio ofrezco acompañamiento psicoterapéutico para niños, adolescentes y adultos, desde un enfoque clínico integrador y centrado en la persona:
           </p>
+
+          <ul>
+            <li>Con niños que están aprendiendo a expresar lo que sienten</li>
+            <li>Con adolescentes que enfrentan enredos emocionales, miedos o crisis de identidad</li>
+            <li>Con personas adultas que buscan un espacio para dejar de exigirse tanto y comenzar a entenderse desde otra perspectiva</li>
+          </ul>
+
           <p>
-            Cada proceso es único, y lo abordo desde un enfoque clínico, sí, pero también creativo y profundamente humano. A veces trabajamos con palabras, otras veces con el cuerpo, el juego con niños, el humor con adultos, el arte o el silencio. Lo importante es que sea real y que tenga sentido para ti.
+            Cada proceso es único y lo abordo desde un enfoque clínico, pero también creativo y profundamente humano. A veces trabajamos con palabras, otras veces con el cuerpo, el juego con niños, el humor con adultos, el arte o el silencio. Lo importante es que sea auténtico y tenga sentido para ti.
           </p>
+
           <p>
-            No creo en moldear a la persona a una técnica, sino en encontrar la estrategia que mejor te abrace en este momento. No se trata de “hacer las cosas bien”, sino de encontrar lo que te ayuda a estar mejor a ti.
+            No creo en moldear a la persona a una técnica, sino en encontrar la estrategia que mejor te apoye en este momento. No se trata de “hacer las cosas bien”, sino de descubrir lo que te ayuda a sentirte mejor.
           </p>
+
           <p>
-            Si estás leyendo esto, ya empezaste el cambio.
+            Si estás leyendo esto, ya has iniciado tu proceso de cambio.
           </p>
         </div>
       </div>
