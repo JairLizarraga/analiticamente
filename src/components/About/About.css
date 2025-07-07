@@ -4,6 +4,15 @@
   color: #3E2C29;
 }
 
+.about-title {
+  font-size: 2.4rem;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #C14D3D;
+}
+
+
 .about-content {
   display: flex;
   flex-wrap: wrap;
@@ -56,6 +65,100 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Tarjeta ya existente */
+.about-card {
+  background: #fff;
+  padding: 1.5rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+  margin-top: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.about-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Animación deslizante */
+.slide-left {
+  animation: slideLeft 0.5s ease-in-out;
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.carousel-text {
+  font-size: 0.95rem;
+  color: #3E2C29;
+  text-align: justify;
+  line-height: 1.9;
+  white-space: pre-line;
+}
+
+.about-card-container {
+  position: relative;
+  min-height: 280px; /* espacio suficiente para evitar saltos */
+}
+
+.about-card-fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.6s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  background: #fff;
+  padding: 1.5rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.about-card-fade.visible {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
+}
+
+.about-card-fade.hidden {
+  opacity: 0;
+}
+
+.carousel-dots {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #C14D3D;
+  box-shadow: 0 0 0 2px #fdfaf6, 0 0 4px #C14D3D;
+}
+
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .about-content {
@@ -70,3 +173,4 @@
     order: 2;
   }
 }
+
