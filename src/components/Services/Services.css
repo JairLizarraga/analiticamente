@@ -1,14 +1,14 @@
 .services-section {
   display: flex;
   width: 100%;
-  height: 100vh;
-  padding-top: 132px; /* Compensa el header fijo */
   box-sizing: border-box;
   gap: 1rem;
-  align-items: center;
+  align-items: flex-start; /* ← en vez de center */
   background-color: #f5f5f5;
-  overflow: visible; /* Quita overflow hidden para permitir scroll natural */
+  overflow: visible;
 }
+
+
 
 .services-text-column {
   flex: 0 0 70%;
@@ -98,8 +98,9 @@
     flex-direction: column;
     height: auto;
     padding-top: 1rem; /* padding top normal en responsive */
+    align-items: center; /* <- agrega esta línea para centrar los hijos */
   }
-
+  
   .services-text-column,
   .services-image-column {
     flex: 1 1 100%;
