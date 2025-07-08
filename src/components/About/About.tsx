@@ -4,20 +4,24 @@ import teamPhoto from "../../assets/About/profilepic.jpg";
 
 const paragraphs = [
   <>
-    Soy psicóloga clínica, cursando la maestría en Terapia Cognitivo Conductual. Me he formado en arteterapia y he trabajado junto a terapeutas con enfoques Gestáltico, Dialéctico Conductual (DBT) e integrativo a lo largo de 8 años. Esta combinación me ha permitido acompañar desde distintas miradas, con sensibilidad y profesionalismo.
+    Hola, soy Saraíd Alvarez. Soy psicóloga clínica, egresada de la Universidad de las Américas, y actualmente curso la maestría en Terapia Cognitivo Conductual en el Instituto de Terapia Cognitivo Conductual (ITCC).  
+    Me he formado también en arteterapia y he trabajado durante más de ocho años junto a profesionales de enfoques gestáltico, dialéctico conductual (DBT) e integrativo.  
+    Esta diversidad de experiencias me ha permitido acompañar a las personas desde distintas perspectivas, con sensibilidad y compromiso.
     <br /><br />
-    Te acompaño con respeto, empatía y compromiso, para que puedas entender mejor lo que sientes, romper esos ciclos que generan malestar y encontrar caminos que realmente funcionen para ti y te ayuden a estar más en paz contigo y con tu entorno.
+    Te acompaño con respeto y empatía, para que puedas comprender mejor lo que sientes, romper los ciclos que generan malestar y encontrar caminos que realmente funcionen para ti — caminos que te acerquen a estar en paz contigo mismo/a y con tu entorno.
   </>,
   <>
-    Una de las herramientas que utilizo es la Terapia Cognitivo Conductual (TCC). Para explicarla de forma sencilla, imagina que tus pensamientos son pequeñas frases que pasan por tu cabeza sin que las invites. Algunas son rápidas, como “No puedo” o “Esto va a salir mal” — esos son los pensamientos automáticos.
+    ¿Y qué es la Terapia Cognitivo Conductual?  
+    Para explicarlo de manera sencilla: imagina que tus pensamientos son pequeñas frases que aparecen sin que las invites. Algunas son rápidas, como “No puedo” o “Esto va a salir mal” — esos son los llamados pensamientos automáticos.
     <br /><br />
-    Debajo de esas frases hay ideas que usás como reglas internas, sin darte cuenta, como “Si no soy perfecta, no me van a querer”. Y más profundo aún, están las creencias que aprendiste desde siempre, como “No merezco ser feliz” o “No puedo confiar en nadie”.
+    Detrás de esas frases suelen estar reglas internas que aplicamos sin darnos cuenta, como “Si no soy perfecta, no me van a querer”.  
+    Y aún más profundo, se encuentran creencias que aprendiste desde siempre, como “No merezco ser feliz” o “No puedo confiar en nadie”.
   </>,
   <>
-    En terapia, te ayudo a observar esas frases e ideas, a entender de dónde vienen y a encontrar nuevas formas de escucharlas para que te lastimen menos y te acompañen mejor.
+    En terapia, te ayudo a identificar esas ideas, comprender de dónde vienen y trabajar en nuevas formas de relacionarte con ellas, para que te lastimen menos y te acompañen de manera más sana.  
     <br /><br />
-    Creo profundamente en la escucha sincera y en que cada proceso es único. Mi compromiso es acompañarte sin apurar, con creatividad y respeto, para que puedas construir tu propio camino.
-    Si sientes que este es el espacio que buscás, te invito a conocer cómo trabajo y a dar el siguiente paso en tu proceso…
+    Creo profundamente en la escucha sincera y en que cada proceso es único. Por eso, mi compromiso es acompañarte sin prisa, con creatividad, respeto y apertura, para que puedas construir un camino propio.  
+    Si sientes que este puede ser tu espacio, te invito a conocer cómo trabajo y a dar ese siguiente paso en tu proceso personal.
   </>
 ];
 
@@ -27,7 +31,7 @@ const About: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % paragraphs.length);
-    }, 7000);
+    }, 25000);
 
     return () => clearInterval(interval);
   }, []);
